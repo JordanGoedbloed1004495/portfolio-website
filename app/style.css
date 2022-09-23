@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: gray;
+  padding: 12px 25px;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+  color:aquamarine;
+}
+
+
+
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ }
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url('/img/header-image.jpg') no-repeat center center/cover;
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  opacity: .9;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.headings {
+  font-family: 'Nunito', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* About section */
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 100px;
+  pad: 300px;
+  margin-bottom: 10px;
+}
+
+#about h1 {
+  color:gray;
+  padding: 50px;
+}
+
+#pic {
+  display: flex;
+}
+
+#pic img{
+
+  height: 400px;
+  padding-left: 10px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  border-style: groove;
+  padding: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:gray;
+}
+
+/* contact section */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  padding-top: 30px;
+  color: gray;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  margin: 20px 0px;
+}
+
+.input {
+  padding: 10px;
+  margin: 5px;
+  width: 60vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+#msg {
+  width: 60vh;
+  padding: 10px;
+  margin: 5px;
+}
+
+#send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+
+
+
+
+
